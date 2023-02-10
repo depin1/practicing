@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 100px;
+    background-color: rgb(191, 18, 218);
+    background-color: transparent;
+    border: 20px dashed rgb(246, 66, 96);
+    max-width: 600px;
+    height: 600px;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: border infinite alternate;
+    animation-duration: 10s;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 100px;
+    background-color: rgb(191, 18, 218);
+    background-color: transparent;
+    border: 20px dashed rgba(13, 0, 255, 0.575);
+    max-width: 600px;
+    height: 600px;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: marvel infinite alternate;
+    animation-duration: 10s;
+}
+
+@keyframes marvel {
+    0% {
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.box_chiled {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: depin infinite;
+    animation-duration: 2s;
+}
+
+@keyframes depin2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(200px, -200px);
+        background-color: rgb(225, 64, 64);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(400px, 0);
+        background-color: gold;
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(200px, 200px);
+        background-color: rgb(12, 9, 13);
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: ghostwhite;
+        opacity: 0.8;
+    }
+}
+
+.box_chiledd {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: depin2 infinite reverse;
+    animation-duration: 2s;
+}
+
+@keyframes border {
+    0% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes depin {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(200px, -200px);
+        background-color: blue;
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(400px, 0);
+        background-color: gold;
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(200px, 200px);
+        background-color: rgb(191, 18, 218);
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: ghostwhite;
+        opacity: 0.8;
+    }
+}
+
+.box_chiled2 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: riddl infinite;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+.box_chiledd2 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: riddl2 reverse infinite;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    position: absolute;
+    right: 0;
+}
+
+@keyframes riddl2 {
+    0% {
+        transform: translate(0, 0);
+        background-color: ghostwhite;
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(-200px, 200px);
+        background-color: rgb(191, 18, 218);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-400px, 0);
+        background-color: aqua;
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(-200px, -200px);
+        background-color: rgb(243, 65, 48);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: gold;
+        opacity: 0.8;
+    }
+}
+
+@keyframes riddl {
+    0% {
+        transform: translate(0, 0);
+        background-color: ghostwhite;
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(-200px, 200px);
+        background-color: rgb(191, 18, 218);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-400px, 0);
+        background-color: aqua;
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(-200px, -200px);
+        background-color: blue;
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: gold;
+        opacity: 0.8;
+    }
+}
+
+.box_chiled3 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    animation: asta infinite;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+.box_chiledd3 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    animation: asta2 reverse infinite;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+@keyframes asta2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(200px, -200px);
+        background-color: rgb(233, 49, 49);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(400px, 0);
+        background-color: gold;
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(200px, 200px);
+        background-color: rgb(191, 18, 218);
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: ghostwhite;
+        opacity: 0.8;
+    }
+}
+
+@keyframes asta {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(200px, -200px);
+        background-color: blue;
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(400px, 0);
+        background-color: gold;
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(200px, 200px);
+        background-color: rgb(191, 18, 218);
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: ghostwhite;
+        opacity: 0.8;
+    }
+}
